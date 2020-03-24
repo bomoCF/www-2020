@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Linie lotnicze</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>Lista lotów</h1>
+    <img src="samolot.jpg" alt="logo firmy" id="logo">
+    <div id="aside_container" class="grid-container">
+    <nav class="grid-item">
+        <ul id="list1">
+            <li><a href="strona1.html">a</a></li>
+            <li><a href="strona2.html">b</a></li>
+            <li><a href="strona3.html">c
+                <ul id="list2">
+                    <li><a href="strona5.html">1</a></li>
+                    <li><a href="strona6.html">2</a></li>
+                </ul>
+            </a></li>
+            <li><a href="strona4.html">d</a></li>
+        </ul>
+    </nav>
+
+    <main class="grid-item">
+    <div>
+	    <!-- <p id="trzeci">Ale super lot!</p> -->
+    <table>
+        <tr>
+            <th>nr lotu</th>
+            <th>skad</th>
+            <th>dokąd</th>
+            <th>data wylotu</th>
+            <th>czas wylotu</th>
+        </tr>
+
+        <tr>
+            <td><a  href="subsite1.html">231</a></td>
+            <td>warszawa</td>
+            <td>dublin</td>
+            <td>21.04.2020</td>
+            <td>10:30</td>
+        </tr>
+
+        <tr>
+            <td><a  href="subsite2.html">233</a></td>
+            <td>Moskwa</td>
+            <td>Tokyo</td>
+            <td>27.08.2020</td>
+            <td>22:34</td>
+        </tr>
+
+    </table>
+    </div>
+    </main>
+
+    <aside class="grid-item">
+        <ul id="lista_opuznien">
+            <li id="opu_lot">opuźnione loty:</li>
+            <li class="canceled">warszawa</li>
+            <li class="late">moskwa</li>
+            <li class="short_late">dublin</li>
+        </ul>
+    </aside>
+    </div>
+
+    <form>
+        <label for="fname">
+            Imię
+        </label>
+        <input type="text" id="fname" name="fname">
+        <br>
+        
+        <label for="fsurname">
+            Nazwisko
+        </label>
+        <input type="text" id="fsurname" name="fsurname">
+        <br>
+        
+        <label for="fdate">
+            Data
+        </label>
+        <input type="date" id="fdate" name="fdate">
+        <br>
+        
+        <label for="ffrom">
+            skąd
+        </label>
+        <select id="ffrom" name="ffrom">
+            <option value="rome">rzym</option>
+            <option value="tokyo">tokyo</option>
+            <option value="viena">wenecja</option>
+        </select>
+        <br>
+        
+        <label for="fto">
+            dokad
+        </label>
+        <select id="fto" name="fto">
+            <option value="rome">rzym</option>
+            <option value="tokyo">tokyo</option>
+            <option value="viena">wenecja</option>
+        </select>
+        <br>
+
+        <input type="submit" value="reset">
+        <input type="submit" value="submit">
+    </form>
+    <footer>
+        Konrad Czapliński
+    </footer>
+</body>
+</html>

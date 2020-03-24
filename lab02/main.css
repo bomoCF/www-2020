@@ -1,0 +1,150 @@
+footer {
+    background-color: aliceblue;
+    color: green;
+    font-family: sans-serif;
+    font-size: 30px;
+    width: 50%;
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+table, td, th {
+    font-weight: 100;
+    border: 1px solid black;
+    border-collapse: collapse;
+    /* text-align: center; */
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    text-align: center;
+}
+
+p {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pierwszy {
+    background-color: rgb(0, 225, 255);
+}
+
+#drugi {
+    background-color: rgb(0, 255, 34);
+}
+
+#trzeci {
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    left: 730px;
+    top: 82px;
+}
+
+div {
+    position: relative;
+    align-self: center;
+}
+
+#logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 20%;
+    height: 20%;
+}
+
+#button_pow {
+    align-self: flex-start;
+}
+
+#form {
+    width: 15%;
+    text-align: start;
+    align-self: flex-start;
+    position: absolute;
+}
+
+#Z_DO {
+    width: 1000px;
+}
+
+#tmp538 {
+    /* position: absolute; */
+    /* left: 10px; */
+    width: 30%;
+    height: 30%;
+}
+
+#warszawa {
+    position: absolute;
+    left: 10px;
+    top: 300px;
+    width: 20%;
+}
+
+#war_pog {
+    position: absolute;
+    top: 250px;
+    left: 10px;
+    width: 20%;
+    height: 20%;
+}
+
+#war_name {
+    position: absolute;
+    top: 230px;
+    left: 10px;
+    width: 20%;
+    height: 20%;
+    font-weight: bold;
+}
+
+#dublin {
+    position: absolute;
+    left: 1300px;
+    top: 300px;
+    width: 20%;
+}
+
+#dub_pog {
+    position: absolute;
+    top: 250px;
+    left: 1300px;
+    width: 20%;
+    height: 20%;
+}
+
+#dub_name {
+    position: absolute;
+    top: 230px;
+    left: 1300px;
+    width: 20%;
+    height: 20%;
+    font-weight: bold;
+}
+
+#list_pas1 {
+    font-size: x-large;
+    /* position: absolute;
+    top: 520px;
+    left: 10px; */
+}
+
+#list_pas2 {
+    /* position: absolute;
+    top: 570px;
+    left: 10px; */
+}
+
+#miejsca_nr1 {
+    color: chartreuse;
+}
+
+#miejsca_nr2 {
+    color: red;
+}
