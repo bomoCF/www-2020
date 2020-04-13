@@ -9,10 +9,12 @@
     <script src='main.js'></script>
 </head>
 <body>
+	<div id="aside_container" class="grid-container">
+	<header class="grid-item5">
     <h1>Lista lotów</h1>
     <img src="samolot.jpg" alt="logo firmy" id="logo">
-    <div id="aside_container" class="grid-container">
-    <div class="grid-item1">
+	</header>
+    <nav class="grid-item1">
         <ul id="list1">
             <li><a href="strona1.html">a</a></li>
             <li><a href="strona2.html">b</a></li>
@@ -24,10 +26,9 @@
             </a></li>
             <li><a href="strona4.html">d</a></li>
         </ul>
-    </div>
+    </nav>
 
-    <div class="grid-item2">
-    <div>
+    <section class="grid-item2">
 	    <!-- <p id="trzeci">Ale super lot!</p> -->
     <table>
         <tr>
@@ -55,20 +56,18 @@
         </tr>
 
     </table>
-    </div>
-    </div>
+    </section>
 
-    <div class="grid-item3">
+    <aside class="grid-item3">
         <ul id="lista_opuznien">
             <li id="opu_lot">opuźnione loty:</li>
-            <li class="canceled">warszawa</li>
-            <li class="late">moskwa</li>
-            <li class="short_late">dublin</li>
+            <li class="canceled">warszawa - dublin</li>
+            <li class="late">moskwa - Tokyo</li>
+            <li class="short_late">dublin - Berlin</li>
         </ul>
-    </div>
-    </div>
+    </aside>
 
-    <form>
+    <form class="grid-item4">
         <label for="fname">
             Imię
         </label>
@@ -110,6 +109,8 @@
         <input type="submit" value="reset">
         <input type="submit" value="submit">
     </form>
+    </div>
+
     <footer>
         Konrad Czapliński
     </footer>
