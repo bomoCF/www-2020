@@ -30,5 +30,5 @@ function reset_wynikow() {
         localStorage.removeItem('staty' + i.toString());
     }
 
-    window.location.pathname = window.location.pathname;
+    window.location.reload();
 }
