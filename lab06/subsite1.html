@@ -6,13 +6,12 @@
     <title>Lot</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
 </head>
 <body>
     <form action="cos.html" id="form">
         <button name="subject" type="submit" id="button_pow">Powrót do strony głównej</button>
     </form>
-    <h1>Lot nr 231</h1>
+    <h1 id="nr_lotu">Lot nr 231</h1>
 
     <p1 id="Z_DO">Z: <a href="https://pl.wikipedia.org/wiki/Warszawa">Warszawa</a> DO: <a href="https://pl.wikipedia.org/wiki/Dublin">Dublin</a></p1>
     <br>
@@ -27,9 +26,9 @@
 
     <h3 id="list_pas1">Lista Pasażerów:</h3>
     <ul id="list_pas2">
-	<li class="pas">Jan Nowak<span class="tooltip"> - miejsce nr 24</span></li>
-        <li class="pas">Adam Kowalski<span class="tooltip"> - miejsce nr 27</span></li>
-        <li class="pas">Łukasz Adamczyk<span class="tooltip"> - miejsce nr 62</span></li>
+	<li class="pas" data-identyfikator-pasazera="bbb">Jan Nowak<span class="tooltip"> - miejsce nr 24</span></li>
+        <li class="pas" data-identyfikator-pasazera="bba">Adam Kowalski<span class="tooltip"> - miejsce nr 27</span></li>
+        <li class="pas" data-identyfikator-pasazera="bbd">Łukasz Adamczyk<span class="tooltip"> - miejsce nr 62</span></li>
     </ul>
 
     <a id="war_name">Warszawa</a>
@@ -38,6 +37,7 @@
 
     <a id="dub_name">Dublin</a>
     <img src="dublin.jpg" id="dublin">
-    <a id="dub_pog">przewidywana pogoda:<br> przelotne opady: 11 stopni</a>
+    <a id="dub_pog">przewidywana pogoda: przelotne opady: 11 stopni</a>
+    <script src='mainsub1.js'></script>
 </body>
 </html>

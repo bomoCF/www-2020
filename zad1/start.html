@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='start.css'>
+</head>
+<body>
+	<div id="start_container" class="grid-container">
+        <header id="grid-tytul">Strona z Quizami</header>
+        <form action="quiz.html" id="grid-start_quiz">
+            <button type="submit" id="start_button">Rozpocznij quiz</button>
+        </form>
+        <button id="grid-reset_wyników" onclick="reset_wynikow()">Zresetuj wyniki</button>
+        <div id="grid-wrapper_top_lista">
+            <h id="grid-top_lista_nazwa">Najlepsze wyniki:</h>
+            <ul id="grid-top_lista"></ul>
+        </div>
+        <p id="grid-wyjasnienie">
+            Za chwilę rozpoczniesz test sprawdzający twoją wiedzę z analizy matematyczniej.
+            Na każde pytanie poprawna odpowiedz to liczba całkowita którą będzie trzeba wpisać w odpowiednie pole.
+            Za każdą złą odpowiedz otrzymasz karę czasową.
+            Twój wynik to suma kar oraz czasu spędzonego rozwiązując te zadania.
+
+        </p>
+        <img src="https://i.redd.it/qz1isd8w2fs11.jpg" id="grid-obrazek">
+    </div>
+    <script src="start.js"></script>
+</body>
+</html>

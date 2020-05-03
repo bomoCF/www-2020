@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='quiz.css'>
+</head>
+<body>
+	<div id="quiz_container" class="grid-container">
+        <form action="start.html" id="grid-return">
+            <button type="submit" id="return_button" onclick="start.html">Powrót do strony głównej</button>
+        </form>
+        <p id="grid-wstep">tmp wstep</p>
+        <p id="grid-pytanie">tresc pytania</p>
+        <input type="text" id="grid-odpowiedz" onchange="uaktualnij_odpowiedzi()">
+        <button id="grid-prev" onclick="poprzedni()">poprzednie pytanie</button>
+        <button id="grid-next" onclick="nastepny()">następne pytanie</button>
+        <p id="grid-kara">kara: -1s</p>
+        <p id="grid-nr_pytania">-1/-1</p>
+        <p id="grid-czas">czas: -1:00</p>
+        <button id="grid-zakoncz" onclick="zakoncz_quiz()">Zakończ Quiz</button>
+    </div>
+
+    <div id="report_container" class="grid-container">
+        <p id="grid-wynik"></p>
+        <p id="grid-odpowiedzi_ok"></p>
+        <p id="grid-suma_kar"></p>
+        <h id="grid-zle_odpowiedzi">Niepoprawnie odpowiedziano:</h>
+        <ul id="grid-lista_pytan"></ul>
+        <div id="grid-wrapper_zapisz">
+            <input type="checkbox" id="grid-zapisz" checked name="check">
+            <label for="grid-zapisz" id="grid-zapisz_label" >Zapisz szczegułowy raport</label>
+        </div>
+        <button id="grid-end_raport" onclick="end_raport()">Zakończ Quiz</button>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
