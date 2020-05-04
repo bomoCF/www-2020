@@ -30,7 +30,7 @@ ostatnieZdjecie();
 // opuznienia.addEventListener('click', koloruj);
 // let formularz = document.getElementById('formularz') as HTMLElement;
 // formularz.addEventListener('click', koloruj);
-let opuznienia = document.getElementById('aside_container');
+let opuznienia = document.getElementById('grid-item3');
 opuznienia.addEventListener('click', koloruj);
 let cnt = 0;
 function koloruj(event) {
@@ -46,14 +46,48 @@ function koloruj(event) {
     let [_, ...koloryRgb] = tmp;
     let kolory = [];
     for (let i = 0; i < 3; i++) {
-        kolory[i] = (parseInt(koloryRgb[i]) + 0x2) % 256;
+        kolory[i] = (parseInt(koloryRgb[i]) + 0x16) % 256;
     }
     element.style.backgroundColor = `rgb(${kolory[0]},${kolory[1]},${kolory[2]})`;
 }
 function fib_rek(ile) {
     if (ile == 0)
-        return 1;
+        return 0;
     if (ile == 1)
         return 1;
     return fib_rek(ile - 1) + fib_rek(ile - 2);
+}
+let pokarz_submit = document.getElementById('formularz');
+pokarz_submit.addEventListener('click', czy_pokazac_submit);
+function czy_pokazac_submit() {
+    let przycisk = document.getElementById('submit-form');
+    przycisk.style.visibility = 'hidden';
+    let fname = document.getElementById('fname');
+    if (fname.value === "")
+        return;
+    let fsurname = document.getElementById('fsurname');
+    if (fsurname.value === "")
+        return;
+    let fdate = document.getElementById('fdate');
+    let podana_data = new Date(Date.parse(fdate.value));
+    let aktualna_data = new Date(Date.now());
+    if (podana_data >= aktualna_data) {
+        przycisk.style.visibility = 'visible';
+    }
+}
+function wypisz_rezerwacje() {
+    let popup = document.getElementById('rezerwacja-popup');
+    popup.style.visibility = "visible";
+    let tekst = "Rezerwacja udana<br>";
+    let imie = document.getElementById('fname');
+    tekst += "imie: " + imie.value + "<br>";
+    let nazwisko = document.getElementById('fsurname');
+    tekst += "nazwisko: " + nazwisko.value + "<br>";
+    let data = document.getElementById('fdate');
+    tekst += "data: " + data.value + "<br>";
+    let skad = document.getElementById('ffrom');
+    tekst += "skąd: " + skad.value + "<br>";
+    let dokad = document.getElementById('fto');
+    tekst += "dokąd: " + dokad.value + "<br>";
+    popup.innerHTML = tekst;
 }

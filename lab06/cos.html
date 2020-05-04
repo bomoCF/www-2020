@@ -6,6 +6,12 @@
     <title>Linie lotnicze</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+      window.addEventListener('load', (event) => {
+        document.getElementById('fname').value="Krzysztof";
+        document.getElementById('fsurname').value="Ciebiera";
+      });
+    </script>
 </head>
 <body>
 	<div id="aside_container" class="grid-container">
@@ -57,7 +63,7 @@
     </table>
     </section>
 
-    <aside class="grid-item3">
+    <aside class="grid-item3" id="grid-item3">
         <ul id="lista_opuznien">
             <li id="opu_lot">opuźnione loty:</li>
             <li class="canceled">warszawa - dublin</li>
@@ -66,7 +72,7 @@
         </ul>
     </aside>
 
-    <form class="grid-item4" action=javascript.validate_form() id="formularz">
+    <form class="grid-item4" id="formularz">
         <label for="fname">
             Imię
         </label>
@@ -105,10 +111,12 @@
         </select>
         <br>
 
-        <input type="submit" value="reset">
-        <input type="submit" value="submit" id="submit-form">
+        <input type="button" value="reset">
+        <input type="button" value="submit" id="submit-form" onclick="wypisz_rezerwacje()">
     </form>
     </div>
+
+    <p id="rezerwacja-popup">Rezerwacja udana</p>
 
     <footer>
         Konrad Czapliński

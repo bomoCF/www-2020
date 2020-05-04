@@ -360,3 +360,21 @@ li:hover .tooltip {
     height: 90%;
     opacity: 30%;
   }
+
+#submit-form {
+    visibility: hidden;
+}
+
+#rezerwacja-popup {
+    visibility: hidden;
+    font-size: 60px;
+    opacity: 80%;
+    color: white;
+    background-color: aqua;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin:0;
+  }
