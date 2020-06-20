@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    h1="historia cen mema"
+    h1 #{meme.name}
+    h1= "aktualna cena: "
+    h1 #{meme.price}
+
+    img(class='meme', src=meme.url)
+
+    form(action=`/meme/${meme.id}`, method='post')
+        input(type='hidden', name='_csrf', value=csrfToken)
+        input(type='number', name='price', required=true)
+        br
+        input(type='submit', value='Update price')
+
+    table
+        thead
+            tr
+                th Cena
+        tbody
+            each p in price_history
+                tr
+                    td #{p.price}

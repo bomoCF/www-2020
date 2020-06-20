@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1= title
+    form(action=redirectRoute, method='post')
+        input(type='hidden', name='_csrf', value=csrfToken)
+        input(name='login', placeholder='Your username', required=true)
+        input(type='password' name='pass', placeholder='password', required=true)
+        input(type='submit', value=title)

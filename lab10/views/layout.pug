@@ -1,0 +1,24 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        block header
+            header
+                ul(class='menu')
+                    if username
+                        h1 cześć, #{username}!
+                    if views
+                        h2 kart otwarto: #{views}.
+                    li
+                        a(href='/') strona główna
+                    unless username
+                        li
+                            a(href='/login') zaloguj się
+                        li
+                            a(href='/register') załórz konto
+                    if  username
+                        li
+                            a(href='/logout') wyloguj się
+        block content

@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    img(class='meme', src='https://img6.demotywatoryfb.pl//uploads/201809/1537649406_jeawaj_600.jpg')
+    h1="lista memów"
+    ul
+        each m in meme_map
+            li
+                a(href="meme/" + m.id) #{m.name}
+                p cena: #{m.price}
+                img(class='meme', src=m.url)
